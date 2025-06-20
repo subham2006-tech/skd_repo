@@ -1,0 +1,22 @@
+<p>add-product works!</p>
+<div class="form-card">
+  <h2>Add New Product</h2>
+  <form (ngSubmit)="addProduct()" #form="ngForm">
+    <label>
+      Product Name:
+      <input name="name" [(ngModel)]="product.name" placeholder=" " required>
+    </label>
+
+    <label>
+      Price:
+      <input name="price" [(ngModel)]="product.price" type="number" placeholder="Price" required>
+    </label>
+
+    <label>
+      Stock Quantity:
+      <input name="stock" [(ngModel)]="product.stock" type="number" placeholder="Stock Quantity" required>
+    </label>
+
+    <button type="submit">Add</button>
+  </form>
+</div>

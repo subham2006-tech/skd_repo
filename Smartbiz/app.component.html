@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+
+<nav style="background: #333; color: white; padding: 1rem;">
+  <span style="font-size: 20px;">SmartBiz App</span>
+  <span style="float: right;">
+    <a routerLink="/login" style="margin-right: 1rem; color: white;">Login</a>
+    <!-- <a routerLink="/admin" style="margin-right: 1rem; color: white;">Dashboard</a> -->
+    <a routerLink="/add-customer" style="margin-right: 1rem; color: white;">Add Customer</a>
+    <a routerLink="/add-product" style="margin-right: 1rem; color: white;">Add Product</a>
+    <a routerLink="/make-sale" style="margin-right: 1rem; color: white;">Make Sale</a>
+    <a *ngIf="role==='admin'" routerLink="/view-transactions">View Transactions</a>
+<a *ngIf="role==='employee'" routerLink="/view-products">View Products</a>
+
+    
+  </span>
+</nav>
+
+<div style="padding: 2rem;">
+  <router-outlet></router-outlet>
+</div>

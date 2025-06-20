@@ -1,0 +1,10 @@
+<p>add-customer works!</p>
+<div class="form-card">
+  <h2>Add New Customer</h2>
+  <form (ngSubmit)="addCustomer()" #form="ngForm">
+    <input name="name" [(ngModel)]="customer.name" placeholder="Name" required>
+    <input name="email" [(ngModel)]="customer.email" placeholder="Email" required>
+    <input name="phone" [(ngModel)]="customer.phone" placeholder="Phone" required>
+    <button type="submit">Add</button>
+  </form>
+</div>

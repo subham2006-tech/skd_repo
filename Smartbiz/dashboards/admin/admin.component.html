@@ -1,0 +1,16 @@
+<p>admin works!</p>
+<h2>Welcome, Admin!</h2>
+<div class="overview">
+  <p>Total Customers: 25</p>
+  <p>Total Products: 12</p>
+  <p>Total Sales: ₹ 50,000</p>
+  <p>Outstanding Payments: ₹ 5,000</p>
+</div>
+
+<nav>
+  <button routerLink="/add-customer">Add Customer</button>
+  <button routerLink="/add-product">Add Product</button>
+  <button routerLink="/transactions">View Transactions</button>
+  <button routerLink="/reports">View Reports</button>
+  <button (click)="logout()">Logout</button>
+</nav>

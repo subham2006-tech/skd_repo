@@ -1,0 +1,27 @@
+<p>make-sale works!</p>
+<div class="form-card">
+  <h2>Make Sale</h2>
+  <form (ngSubmit)="makeSale()" #form="ngForm">
+    <label>
+      Customer Name:
+      <input [(ngModel)]="sale.customerName" name="customer" placeholder="Customer Name" required>
+    </label>
+
+    <label>
+      Product Name:
+      <input [(ngModel)]="sale.product" name="product" placeholder="Product Name" required>
+    </label>
+
+    <label>
+      Quantity:
+      <input [(ngModel)]="sale.quantity" name="quantity" type="number" placeholder="Quantity" required>
+    </label>
+
+    <label>
+      Total Amount:
+      <input [(ngModel)]="sale.total" name="total" type="number" placeholder="Total Amount" required>
+    </label>
+
+    <button type="submit">Submit Sale</button>
+  </form>
+</div>
